@@ -1,16 +1,35 @@
-# Multimodal-RAG-Medical-App
- A FastAPI + Gradio app for medical decision support using multimodal Retrieval-Augmented Generation (RAG). Combines clinical notes and AI-powered insights to assist diagnosis and treatment planning.
+# Multimodal RAG System for Medical Applications
 
-A prototype AI application that integrates medical text and image data using Retrieval-Augmented Generation (RAG) to assist healthcare professionals in clinical decision-making. Built with FastAPI, Gradio, and Hugging Face Transformers, the system enables contextual Q&A over medical notes and provides a foundation for future multimodal healthcare tools.
+A prototype application that combines patient notes and medical images to assist with healthcare decisions using Retrieval-Augmented Generation (RAG).
 
-Key Features:
+## Technologies
+- Python
+- FastAPI
+- Gradio
+- Hugging Face Transformers
 
-💡 Retrieval-Augmented Generation using Bio/Clinical domain LLMs
+## How to Run
+```bash
+# Clone the repo
+git clone https://github.com/your-username/multimodal-rag-medical-app.git
+cd multimodal-rag-medical-app
 
-📄 Ingests and understands structured/unstructured medical notes
+# Install dependencies
+pip install -r requirements.txt
 
-🧠 FastAPI-powered backend with a user-friendly Gradio interface
+# Run FastAPI backend
+uvicorn app.main:app --reload
 
-🔍 Future support for X-ray and radiology image interpretation
+# Run Gradio UI
+python gradio_ui/interface.py
+```
 
-Tech Stack: Python, FastAPI, Gradio, Hugging Face Transformers, FAISS (planned)
+## Features
+- Upload medical notes (text)
+- Upload diagnostic images (coming soon)
+- Embeds and retrieves relevant data
+- Generates medical insights using LLM
+
+## Future Improvements
+- Add multimodal LLMs like LLaVA or BioMedGPT
+- Expand dataset and fine-tune with domain-specific knowledge
