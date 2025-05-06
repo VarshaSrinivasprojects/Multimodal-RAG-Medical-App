@@ -1,6 +1,16 @@
 # Multimodal RAG System for Medical Applications
 
-A prototype application that combines patient notes and medical images to assist with healthcare decisions using Retrieval-Augmented Generation (RAG).
+# A FastAPI + Gradio app for medical decision support using multimodal Retrieval-Augmented Generation (RAG). Combines clinical notes and AI-powered insights to assist diagnosis and treatment planning. 
+
+##Key Features:
+
+💡 Retrieval-Augmented Generation using Bio/Clinical domain LLMs
+
+📄 Ingests and understands structured/unstructured medical notes
+
+🧠 FastAPI-powered backend with a user-friendly Gradio interface
+
+🔍 Future support for X-ray and radiology image interpretation
 
 ## Technologies
 - Python
